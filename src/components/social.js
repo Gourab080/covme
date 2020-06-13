@@ -13,7 +13,7 @@ function SocialCard({github, twitter, facebook}) {
     return (
         <React.Fragment>
             <a
-                href="https://github.com/abdul-alim/covid19-india"
+                href="https://github.com/abdul-alm/covid19-india"
                 rel="noopener"
                 target="_blank"
                 className={`block my-2 ${github ? '' : 'hidden'}`}
