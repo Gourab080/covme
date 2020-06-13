@@ -1,34 +1,62 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { Component } from 'react';
+import {
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+  MDBContainer
+} from 'mdbreact';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-const navLinkProps = (path, animationDelay) => ({
-    className: `${window.location.pathname === path ? 'focused' : ''}`,
-    style: {
-        animationDelay: `${animationDelay}s`,
-    },
-});
+class Navbar extends Component {
+  state = {
+    collapseID: ''
+  };
 
-function Navbar({pages}) {
-    const [expand, setExpand] = useState(false);
+  toggleCollapse = collapseID => () => {
+    this.setState(prevState => ({
+      collapseID: prevState.collapseID !== collapseID ? collapseID : ''
+    }));
+  };
+
+  render() {
     return (
-        <nav className="flex items-center flex-wrap bg-white text-primary py-2">
-            <div className="container py-2 px-2 items-center font-bold text-lg">
-                <div className="w-full flex items-center justify-between -my-2">
-                    <NavLink exact={true} to='/' className="flex items-center cursor-pointer lg:flex">
-                        <img
-                            src="/images/covid.svg"
-                            alt="logo"
-                            className="h-10 w-auto mr-3"
-                        />
-                        <div className="text-xl font-bold text-black text-primary">
-                            COVID-19 India
-                        </div>
-                    </NavLink>
-                    
-                </div>
-            </div>
-        </nav>
+        <MDBContainer>
+          <MDBNavbar
+            color='light-blue lighten-4'
+            style={{ marginTop: '20px' }}
+            light
+          >
+            <MDBContainer>
+              <MDBNavbarBrand>Navbar</MDBNavbarBrand>
+              <MDBNavbarToggler
+                onClick={this.toggleCollapse('navbarCollapse1')}
+              />
+              <MDBCollapse
+                id='navbarCollapse1'
+                isOpen={this.state.collapseID}
+                navbar
+              >
+                <MDBNavbarNav left>
+                  <MDBNavItem active>
+                    <MDBNavLink to='#!'>Home</MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to='#!'>Link</MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to='#!'>Profile</MDBNavLink>
+                  </MDBNavItem>
+                </MDBNavbarNav>
+              </MDBCollapse>
+            </MDBContainer>
+          </MDBNavbar>
+        </MDBContainer>
     );
+  }
 }
 
 export default Navbar;
