@@ -12,7 +12,7 @@ function Navbar({pages}) {
     const [expand, setExpand] = useState(false);
     return (  
 <nav className="navbar navbar-light light-blue lighten-4">
-        <a className="navbar-brand" href="#">Navbar</a>
+        <a className="navbar-brand" href="#">PANDEMIC2020</a>
         <button className="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span className="dark-blue-text"><i className="fas fa-bars fa-1x" /></span></button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent1">
           <ul className="navbar-nav mr-auto">
