@@ -11,54 +11,31 @@ const navLinkProps = (path, animationDelay) => ({
 function Navbar({pages}) {
     const [expand, setExpand] = useState(false);
     return (
-        <nav className="flex items-center flex-wrap bg-white text-primary py-2">
-            <div className="container py-2 px-2 items-center font-bold text-lg">
-                <div className="w-full flex items-center justify-between -my-2">
-                    <NavLink exact={true} to='/' className="flex items-center cursor-pointer lg:flex">
-                        <img
-                            src="/images/covid.svg"
-                            alt="logo"
-                            className="h-10 w-auto mr-3"
-                        />
-                        <div className="text-xl font-bold text-black text-primary">
-                            COVID-19 India
-                            <span className="text-red-600 uppercase live-txt blink">
-                                Live
-                            </span>
-                        </div>
-                    </NavLink>
-                    <div className="flex ml-auto mr-1">
-                        {pages.map((page, i) => {
-                            if (page.showInNavbar === true) {
-                                return (
-                                    <NavLink
-                                        exact={true}
-                                        to={page.pageLink}
-                                        key={i}
-                                        className={
-                                            'mx-1 px-3 py-4 hidden lg:block nav-link'
-                                        }
-                                        activeClassName={
-                                            'relative nav-link-active'
-                                        }
-                                    >
-                                        <span
-                                            {...navLinkProps(
-                                                page.pageLink,
-                                                page.animationDelayForNavbar
-                                            )}
-                                        >
-                                            {page.displayName}
-                                        </span>
-                                    </NavLink>
-                                );
-                            }
-                            return null;
-                        })}
-                    </div>
-                </div>
-            </div>
-        </nav>
+              {/*Navbar*/}
+      <nav className="navbar navbar-light light-blue lighten-4">
+        {/* Navbar brand */}
+        <a className="navbar-brand" href="#">Navbar</a>
+        {/* Collapse button */}
+        <button className="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span className="dark-blue-text"><i className="fas fa-bars fa-1x" /></span></button>
+        {/* Collapsible content */}
+        <div className="collapse navbar-collapse" id="navbarSupportedContent1">
+          {/* Links */}
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Features</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          {/* Links */}
+        </div>
+        {/* Collapsible content */}
+      </nav>
+      {/*/.Navbar*/}
     );
 }
 
