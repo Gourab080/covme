@@ -206,7 +206,7 @@ class Map extends React.Component {
         return (
             <div>
                 
-                )}
+                
             </div>
         );
     }
