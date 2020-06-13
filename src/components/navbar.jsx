@@ -1,65 +1,67 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import {
+MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
+MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
+} from "mdbreact";
+import { BrowserRouter as Router } from 'react-router-dom';
 
-const navLinkProps = (path, animationDelay) => ({
-    className: `${window.location.pathname === path ? 'focused' : ''}`,
-    style: {
-        animationDelay: `${animationDelay}s`,
-    },
-});
+class Navbar extends Component {
+state = {
+  isOpen: false
+};
 
-function Navbar({pages}) {
-    const [expand, setExpand] = useState(false);
-    return (
-        <nav className="flex items-center flex-wrap bg-white text-primary py-2">
-            <div className="container py-2 px-2 items-center font-bold text-lg">
-                <div className="w-full flex items-center justify-between -my-2">
-                    <NavLink exact={true} to='/' className="flex items-center cursor-pointer lg:flex">
-                        <img
-                            src="/images/covid.svg"
-                            alt="logo"
-                            className="h-10 w-auto mr-3"
-                        />
-                        <div className="text-xl font-bold text-black text-primary">
-                            COVID-19 India
-                            <span className="text-red-600 uppercase live-txt blink">
-                                Live
-                            </span>
-                        </div>
-                    </NavLink>
-                    <div className="flex ml-auto mr-1">
-                        {pages.map((page, i) => {
-                            if (page.showInNavbar === true) {
-                                return (
-                                    <NavLink
-                                        exact={true}
-                                        to={page.pageLink}
-                                        key={i}
-                                        className={
-                                            'mx-1 px-3 py-4 hidden lg:block nav-link'
-                                        }
-                                        activeClassName={
-                                            'relative nav-link-active'
-                                        }
-                                    >
-                                        <span
-                                            {...navLinkProps(
-                                                page.pageLink,
-                                                page.animationDelayForNavbar
-                                            )}
-                                        >
-                                            {page.displayName}
-                                        </span>
-                                    </NavLink>
-                                );
-                            }
-                            return null;
-                        })}
-                    </div>
+toggleCollapse = () => {
+  this.setState({ isOpen: !this.state.isOpen });
+}
+
+render() {
+  return (
+    <Router>
+      <MDBNavbar color="indigo" dark expand="md">
+        <MDBNavbarBrand>
+          <strong className="white-text">Navbar</strong>
+        </MDBNavbarBrand>
+        <MDBNavbarToggler onClick={this.toggleCollapse} />
+        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+          <MDBNavbarNav left>
+            <MDBNavItem active>
+              <MDBNavLink to="#!">Home</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="#!">Features</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="#!">Pricing</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret>
+                  <span className="mr-2">Dropdown</span>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+          </MDBNavbarNav>
+          <MDBNavbarNav right>
+            <MDBNavItem>
+              <MDBFormInline waves>
+                <div className="md-form my-0">
+                  <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
                 </div>
-            </div>
-        </nav>
+              </MDBFormInline>
+            </MDBNavItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBNavbar>
+    </Router>
     );
+  }
 }
 
 export default Navbar;
