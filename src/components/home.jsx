@@ -541,49 +541,9 @@ return (
           <div className="w-full fade-in mb-4" style={animationDelay(1)}>
             <DisplayCard ref={childRef} cards={displayCards} count={2000} />
           </div>
-          <div className="w-full fade-in mb-4 border" style={animationDelay(2)}>
-            <TrendGraph chartJson={dailyChart} history={caseHistory.india} />
-          </div>
-          {IS_SINGLE_COLUMN && getMapAndTable()}
-          <div className="w-full fade-in md:w-40 mb-4 state-bar border" style={animationDelay(4)}>
-            <Chart seriesData={stateCases} name="state_cases" callback={chartCallback} />
-          </div>
-          <div className="w-full fade-in md:w-40 mb-4 state-bar border" style={animationDelay(5)}>
-            <Chart seriesData={growthRateChart} name="growth" callback={chartCallback} />
-          </div>
-          <div className="w-full fade-in md:w-40 mb-4 percent-chart border" style={animationDelay(6)}>
-            <Chart seriesData={percentChart} name="percent" callback={chartCallback} />
-          </div>
-          <div className="w-full fade-in md:w-40 mb-4 state-bar border" style={animationDelay(7)}>
-            <Chart seriesData={wordcloudChart} name="wordcloud" callback={chartCallback} />
-          </div>
-          <div className="w-full fade-in mb-4 border" style={animationDelay(2)}>
-            <h2 className="ml-3 mt-4">Animation Of Top 10 States By Total Confirmed Cases</h2>
-            <h2 className="ml-3 my-0 text-sm text-gray-400 mb-2 subtitle-color">
-              Click the play button to animate the chart
-            </h2>
-            <div className="race-bar" ref={parentRef}>
-              <RacingBarChart keyframes={keyframes} onStart={()=> forceUpdate(true)}
-                onStop={() => forceUpdate(false)}
-                ref={chartRef}
-                parentRef={parentRef}
-                categories={stateCodes}
-                />
-            </div>
-            <div style={{marginLeft: 100}} className="my-2">
-              <IconButton aria-label="replay" size="small" onClick={handleReplay}>
-                <ReplayIcon />
-              </IconButton>
-              <IconButton onClick={playing ? handleStop : handleStart} size="small">
-                {playing ?
-                <PauseIcon /> :
-                <PlayArrowIcon />}
-              </IconButton>
-            </div>
-          </div>
-          <div className="w-full fade-in" style={animationDelay(3)}>
-            <MetaCard history={caseHistory.india} tests={metaCardPopulation} report={{...mapInitData}} />
-          </div>
+          
+          
+          
         </div>
         
         
