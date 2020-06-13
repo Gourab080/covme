@@ -601,9 +601,7 @@ function Home({}) {
                     </div>
                 )}
                 {fetched && (
-                      <div className="row">
-                          <DisplayCard ref={childRef} cards={displayCards} count={2000} />
-                       </div>
+                         <DisplayCard ref={childRef} cards={displayCards} count={2000} />
                      <Footer />
                 )}
             </div>
