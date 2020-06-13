@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap');
 
+.navbar-brand {
+     font-family: 'MuseoModerno', cursive;
+     text-align: center;
+     font-weight: bold;
+}
 
 html {
     line-height: 1.15;
