@@ -630,12 +630,9 @@ function Home({}) {
                                     <DisplayCard ref={childRef} cards={displayCards} count={2000} />
                                 </div>
 
-                                <div className="w-full fade-in mb-4 border" style={animationDelay(2)}>
-                                    <TrendGraph chartJson={dailyChart} history={caseHistory.india} />
-                                </div>
-
-                                {IS_SINGLE_COLUMN && getMapAndTable()}
-
+                               
+                            </div>
+                            
                         <Footer />
                     </div>
                 )}
