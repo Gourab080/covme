@@ -205,32 +205,7 @@ class Map extends React.Component {
     render() {
         return (
             <div>
-                <MapText
-                    ref={this.child}
-                    initCardData={this.props.initCardData}
-                    cards={this.props.cards}
-                    callback={this.callback.bind(this)}
-                />
-                <div className="live-map my-6" ref={(c) => (this.myDiv = c)}></div>
-                {this.props.zones && (
-                    <div className="my-4 text-sm hidden">
-                        <button
-                            className="bg-gray-300 px-4 py-3 font-bold text-primary"
-                            name="default"
-                            onClick={this.changeMapType.bind(this)}
-                            onTouchStart={this.changeMapType.bind(this)}
-                        >
-                            Affected Areas
-                        </button>
-                        <button
-                            className="bg-gray-300 px-4 py-3 font-bold ml-2"
-                            name="zone"
-                            onClick={this.changeMapType.bind(this)}
-                            onTouchStart={this.changeMapType.bind(this)}
-                        >
-                            Zones
-                        </button>
-                    </div>
+                
                 )}
             </div>
         );
