@@ -518,8 +518,8 @@ return (
     </div>
     )}
     {fetched && (
-    <div className="opacity-0 my-8 fade-in">
-      <div className="flex flex-wrap justify-center">
+    <div className="pndemic01">
+      <div className="flex justify-center">
         <div className="w-full md:w-40 md:mx-10 pb-4">
           <div className="w-full fade-in mb-4" style={animationDelay(1)}>
             <DisplayCard ref={childRef} cards={displayCards} count={2000} />
