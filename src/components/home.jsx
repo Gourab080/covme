@@ -34,6 +34,7 @@ import PauseIcon from '@material-ui/icons/Pause';
 import ReplayIcon from '@material-ui/icons/Replay';
 import IconButton from '@material-ui/core/IconButton';
 import Footer from './footer';
+import Footer from './last';
 import SocialCard from './social';
 const d3 = window.d3;
 const IS_DESKTOP = !IS_MOBILE_DEVICE;
@@ -513,16 +514,7 @@ return (
           <div className="w-full fade-in mb-4" style={animationDelay(1)}>
             <DisplayCard ref={childRef} cards={displayCards} count={2000} />
           </div>
-       <div className="container">
-        <div className="row">
-          <div className="col text-red-600 uppercase live-txt blink">
-            1 of 2
-          </div>
-          <div className="col">
-            2 of 2
-          </div>
-        </div>
-      </div>
+            <Last />
           {IS_SINGLE_COLUMN && getMapAndTable()}
           
         </div>
