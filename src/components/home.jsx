@@ -186,7 +186,7 @@ colorClass: 'green',
 },
 {
 name: 'deceased',
-accessor: 'deceased',
+accessor: 'Dead',
 colorClass: 'gray',
 },
 ],
