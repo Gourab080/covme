@@ -48,7 +48,7 @@ function App() {
             </Helmet>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <ScrollToTop />
-                <Analytics id="">
+                <Analytics id="UA-161766535-2">
                     <Route
                         render={({location}) => (
                             <div className="Routing">
