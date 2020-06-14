@@ -185,7 +185,7 @@ accessor: 'recovered',
 colorClass: 'green',
 },
 {
-name: 'deceased',
+name: 'Dead',
 accessor: 'Dead',
 colorClass: 'gray',
 },
