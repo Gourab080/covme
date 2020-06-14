@@ -458,12 +458,12 @@ return (
     {fetched &&
       <Table rows={tableData.rows} columns={tableData.columns} link={false} />}
   </div>
-  <div className="font-bold my-8 text-center text-gray-700 opacity-0 fade-in" style={animationDelay(2)}>
+  <!-- div className="font-bold my-8 text-center text-gray-700 opacity-0 fade-in" style={animationDelay(2)}>
     <h1 className="text-2xl font-extra-bold">Last Updated : <h2 id="lastUpdated" className="capitalize">{lastUpdated}</h2></h1>
     <h2 className="text-xs">
       {isTouchDevice() ? 'Tap/Double Tap' : 'Hover/Click'} on the map for more information
     </h2>
-  </div>
+  </div -->
   <div className="flex justify-between fade-in my-6" style={animationDelay(2)}>
     
     <div className="text-blue-600 items-center justify-center text-right">
