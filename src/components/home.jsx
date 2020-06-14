@@ -129,7 +129,7 @@ setArticles(news);
 let parseTime = d3.timeParse('%d/%m/%Y %H:%M:%S');
 let updatedTime = parseTime(reports.updatedTime);
 setLastUpdated(
-`${timeDifference(new Date(), updatedTime)} - ${d3.timeFormat('%B %d, %I:%M %p')(
+`${d3.timeFormat('%B %d, %I:%M %p')(
 new Date(updatedTime)
 )}`
 );
@@ -512,9 +512,8 @@ return (
             <DisplayCard ref={childRef} cards={displayCards} count={2000} />
           </div>
             <div className="row">
-               <h3 className="text-red-600 uppercase live-txt blink">
+               <h3>Last Update</h3>
                     <h4>{lastUpdated}</h4>
-                </h3>
             </div>
           {IS_SINGLE_COLUMN && getMapAndTable()}
           
