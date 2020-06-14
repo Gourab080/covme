@@ -455,15 +455,9 @@ return (
 <React.Fragment>
   <div className="w-full my-6 fade-in" style={animationDelay(6)}>
     {fetched &&
-    <div className="container">
-       <div className="row">
-          <div className="col text-red-600 uppercase live-txt blink">
-              Last Update
-          </div>
-      <div className="col">
-          2 of 2
-      </div>
-    </div>
+        <span className="text-red-600 uppercase live-txt blink">
+                                Live
+                            </span>
       <Table rows={tableData.rows} columns={tableData.columns} link={true} />}
   </div>
   <div className="font-bold my-8 text-center text-gray-700 opacity-0 fade-in" style={animationDelay(2)}>
