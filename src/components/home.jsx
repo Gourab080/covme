@@ -511,10 +511,14 @@ return (
           <div className="w-full fade-in mb-4" style={animationDelay(1)}>
             <DisplayCard ref={childRef} cards={displayCards} count={2000} />
           </div>
-            <div className="row">
-               <h3>Last Update</h3>
-                    <h4>{lastUpdated}</h4>
-            </div>
+            <div className="text-right text-xs mb-2">
+                                        <h2 className="">Last Updated</h2>
+                                        <h2 id="lastUpdated" className="capitalize">
+                                            {lastUpdated}
+                                        </h2>
+                                    </div>
+                                </div>
+
           {IS_SINGLE_COLUMN && getMapAndTable()}
           
         </div>
