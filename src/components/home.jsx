@@ -80,7 +80,7 @@ colorClass: 'blue',
 name: 'Recovered',
 value: total.recovered,
 delta: today.recovered,
-colorClass: 'green',
+colorClass: 'darkgreen',
 },
 {
 name: 'Dead',
