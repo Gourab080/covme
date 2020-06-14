@@ -512,7 +512,9 @@ return (
             <DisplayCard ref={childRef} cards={displayCards} count={2000} />
           </div>
             <div className="row">
-                <h3>{lastUpdated}</h3>
+               <h3 className="text-red-600 uppercase live-txt blink">
+                    <h4>{lastUpdated}</h4>
+                </h3>
             </div>
           {IS_SINGLE_COLUMN && getMapAndTable()}
           
