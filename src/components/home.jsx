@@ -170,7 +170,7 @@ rows: tableData,
 columns: [
 {name: 'state/UT', accessor: 'name'},
 {
-name: IS_MOBILE_DEVICE ? 'cnfmd' : 'confirmed',
+name: IS_MOBILE_DEVICE ? 'confirmed' : 'confirmed',
 accessor: 'confirmed',
 colorClass: 'red',
 },
