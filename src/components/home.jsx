@@ -506,7 +506,15 @@ return (
     )}
     {fetched && (
     <div className="opacity-0 my-8 fade-in">
-                        
+      {/* Last Updated */}
+
+       <div className="text-right text-xs mb-2">
+           <h2 className="">Last Updated</h2>
+           <h2 id="lastUpdated" className="capitalize">
+              {lastUpdated}
+           </h2>
+        </div>   
+              
       <Footer />
     </div>
     )}
