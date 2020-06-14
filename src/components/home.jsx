@@ -454,18 +454,11 @@ updateChartStore(chartStore);
 function getMapAndTable() {
 return (
 <React.Fragment>
-  <div className="w-full my-6 fade-in" style={animationDelay(6)}>
+  <div className="w-full my-6 fade-in" style={animationDelay(1)}>
     {fetched &&
       <Table rows={tableData.rows} columns={tableData.columns} link={false} />}
   </div>
-  <div className="flex justify-between fade-in my-6" style={animationDelay(2)}>
-    
-    <div className="text-blue-600 items-center justify-center text-right">
-    </div>
-  </div>
-  <div className="fade-in" style={animationDelay(4)}>
-    <Map initCardData={mapInitData} seriesPoints={stateData} stateCode={'IND'} joinBy={'name'} data={tableData} cards={['confirmed', 'active' , 'recovered' , 'dead' ]} callback={callbackMap} clickCallback={goToStatePage} tapCallback={tapCallback} />
-  </div>
+  
 </React.Fragment>
 );
 }
