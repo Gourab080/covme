@@ -483,9 +483,7 @@ return (
   <Helmet>
    </Helmet>
   <div className="container">
-    {spinner && (
     
-    )}
     {fetched && (
     <div className="opacity-0 my-8 fade-in">
       {/* Main Bar */}
