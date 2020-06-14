@@ -1,11 +1,13 @@
 import React from 'react';
-import SocialCard from './social';
+// import SocialCard from './social';
 
 function Footer() {
     return (
-        <footer className="flex justify-center my-10 flex-col items-center">
-            <SocialCard github={true} facebook={true} twitter={true} />
-        </footer>
+      <footer className="page-footer font-small blue">
+        <div className="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+      </footer>
         
     );
 }
