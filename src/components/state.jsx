@@ -299,8 +299,10 @@ function State({}) {
                     </div>
                 )}
                 {fetched && (
+                  <div className="row">
                      <h1> Not Found </h1>
-                    <Footer />
+                  </div>
+                <Footer />
                 )}
             </div>
         </React.Fragment>
