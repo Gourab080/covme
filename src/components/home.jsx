@@ -506,40 +506,7 @@ return (
     )}
     {fetched && (
     <div className="opacity-0 my-8 fade-in">
-                        <div className="flex flex-wrap justify-center">
-                            <div className="w-full md:w-40 md:mx-10 pb-4">
-                                <div className="flex justify-between font-bold items-center my-4">
-                                    <SocialCard github={true} />
-                                </div>
-                                <div className="flex justify-between text-primary font-bold items-center my-2">
-                                    <div className="flex">
-                                        <Button
-                                            onClick={shareTheApp}
-                                            color="primary"
-                                            className="bg-primary"
-                                            endIcon={<ShareIcon />}
-                                        >
-                                            Share
-                                        </Button>
-                                    </div>
-                                    <div className="text-right text-xs mb-2">
-                                        <h2 className="">Last Updated</h2>
-                                        <h2 id="lastUpdated" className="capitalize">
-                                            {lastUpdated}
-                                        </h2>
-                                    </div>
-                                </div>
-
-                                <div className="w-full fade-in mb-4" style={animationDelay(1)}>
-                                    <DisplayCard ref={childRef} cards={displayCards} count={2000} />
-                                </div>
-
-                                <div className="w-full fade-in mb-4 border" style={animationDelay(2)}>
-                                    <TrendGraph chartJson={dailyChart} history={caseHistory.india} />
-                                </div>
-
-                                {IS_SINGLE_COLUMN && getMapAndTable()}
-                        </div>
+                        
       <Footer />
     </div>
     )}
