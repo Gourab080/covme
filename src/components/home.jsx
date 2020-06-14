@@ -513,7 +513,16 @@ return (
           <div className="w-full fade-in mb-4" style={animationDelay(1)}>
             <DisplayCard ref={childRef} cards={displayCards} count={2000} />
           </div>
-          
+       <div className="container">
+        <div className="row">
+          <div className="col text-red-600 uppercase live-txt blink">
+            1 of 2
+          </div>
+          <div className="col">
+            2 of 2
+          </div>
+        </div>
+      </div>
           {IS_SINGLE_COLUMN && getMapAndTable()}
           
         </div>
