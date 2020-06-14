@@ -68,7 +68,7 @@ return [
 name: 'Confirmed',
 value: total.confirmed,
 delta: today.confirmed,
-colorClass: '#FF1744',
+colorClass: 'red',
 },
 {
 name: 'Active',
@@ -80,7 +80,7 @@ colorClass: 'blue',
 name: 'Recovered',
 value: total.recovered,
 delta: today.recovered,
-colorClass: 'darkgreen',
+colorClass: 'green',
 },
 {
 name: 'Dead',
