@@ -74,7 +74,7 @@ colorClass: '#FF1744',
 name: 'Active',
 value: total.active,
 delta: today.active,
-colorClass: 'orange',
+colorClass: 'blue',
 },
 {
 name: 'Recovered',
