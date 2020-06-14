@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 .navbar-brand {
-     font-family: 'MuseoModerno', cursive;
+     font-family: 'Roboto', sans-serif;
      text-align: center;
      font-weight: bold;
      color: #fff;
