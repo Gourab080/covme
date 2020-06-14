@@ -68,7 +68,7 @@ return [
 name: 'Confirmed',
 value: total.confirmed,
 delta: today.confirmed,
-colorClass: 'red',
+colorClass: '#FF1744',
 },
 {
 name: 'Active',
