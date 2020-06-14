@@ -503,14 +503,6 @@ return (
     )}
     {fetched && (
     <div className="opacity-0 my-8 fade-in">
-      {/* Last Updated */}
-
-       <div className="text-right text-xs mb-2">
-           <h2 className="">Last Updated</h2>
-           <h2 id="lastUpdated" className="capitalize">
-              {lastUpdated}
-           </h2>
-        </div>   
       {/* Main Bar */}
        <div className="w-full fade-in mb-4" style={animationDelay(1)}>
             <DisplayCard ref={childRef} cards={displayCards} count={2000} />
