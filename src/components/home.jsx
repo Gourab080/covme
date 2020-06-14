@@ -515,10 +515,10 @@ return (
            </h2>
         </div>   
               
-      <Footer />
     </div>
     )}
   </div>
+<Footer />
 </React.Fragment>
 );
 }
