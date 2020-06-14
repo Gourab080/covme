@@ -45,11 +45,9 @@ function Table(props) {
                 <tr>
                     {columns.map((column) => (
                         <th
-                            className="capitalize border px-2 py-2 sort-by sticky bg-white"
+                            className="capitalize border px-2 py-2 sticky bg-white"
                             key={column.name}
-                            onClick={sortRows}
                             data-prop={column.accessor}
-                            title="Click to sort"
                         >
                             {column.name}
                         </th>
