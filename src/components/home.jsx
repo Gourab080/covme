@@ -456,7 +456,7 @@ return (
 <React.Fragment>
   <div className="w-full my-6 fade-in" style={animationDelay(6)}>
     {fetched &&
-      <Table rows={tableData.rows} columns={tableData.columns} link={true} />}
+      <Table rows={tableData.rows} columns={tableData.columns} link={false} />}
   </div>
   <div className="font-bold my-8 text-center text-gray-700 opacity-0 fade-in" style={animationDelay(2)}>
     <h1 className="text-2xl font-extra-bold">Last Updated : <h2 id="lastUpdated" className="capitalize">{lastUpdated}</h2></h1>
