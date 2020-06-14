@@ -184,7 +184,11 @@ name: IS_MOBILE_DEVICE ? 'recovered' : 'recovered',
 accessor: 'recovered',
 colorClass: 'green',
 },
-
+{
+                        name: 'deceased',
+                        accessor: 'dead',
+                        colorClass: 'gray',
+                    },
 ],
 });
 // daily trend
