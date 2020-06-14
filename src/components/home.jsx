@@ -460,22 +460,8 @@ return (
     </h2>
   </div>
   <div className="flex justify-between fade-in my-6" style={animationDelay(2)}>
-    <div className="text-blue-600 items-center justify-center">
-      <div className="text-xs py-1">
-        Tested <span className="font-bold">{testingData.label}</span>
-      </div>
-      <div className="text-xl font-bold">{testingData.tested}</div>
-      {testingData.date}
-    </div>
+    
     <div className="text-blue-600 items-center justify-center text-right">
-      <div className="text-xs py-1">
-        Population{' '}
-        <a rel="noopener" target="_blank" className="bg-blue-100" href={PUPULATION_SOURCE}>
-          2019
-        </a>
-      </div>
-      <div className="text-sm font-bold">{testingData.population}</div>
-      <div className="text-sm font-bold">{testingData.test_per_million} tests / million people</div>
     </div>
   </div>
   <div className="fade-in" style={animationDelay(4)}>
