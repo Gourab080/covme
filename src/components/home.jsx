@@ -177,7 +177,7 @@ colorClass: 'red',
 {
 name: IS_MOBILE_DEVICE ? 'active' : 'active',
 accessor: 'active',
-colorClass: 'orange',
+colorClass: 'blue',
 },
 {
 name: IS_MOBILE_DEVICE ? 'recovered' : 'recovered',
