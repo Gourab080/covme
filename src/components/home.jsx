@@ -483,7 +483,20 @@ return (
   <Helmet>
    </Helmet>
   <div className="container">
-    
+    {spinner && (
+                 <div
+                     className="flex items-center justify-center fixed h-screen w-full z-10"
+                     style={{left: 0, top: 0}}
+                    >
+                      <div className="cssload-dots">
+                         <div className="cssload-dot" />
+                          <div className="cssload-dot" />
+                          <div className="cssload-dot" />
+                          <div className="cssload-dot" />
+                          <div className="cssload-dot" />
+                       </div>
+                  </div>
+              )}
     {fetched && (
     <div className="opacity-0 my-8 fade-in">
       {/* Main Bar */}
