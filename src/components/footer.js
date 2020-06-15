@@ -6,7 +6,7 @@ function Footer(props) {
 
   return (
     <footer className="fadeInUp" style={{animationDelay: '2s'}}>
-      <h5>{t('We stand with everyone fighting on the frontlines')}</h5>
+      <h5>We stand with everyone fighting on the frontlines</h5>
 
       <div className="link">
         <a
@@ -25,7 +25,7 @@ function Footer(props) {
         rel="noopener noreferrer"
       >
         
-        <span>{t('Open Sourced on GitHub')}</span>
+        <span>Open Sourced on GitHub</span>
       </a>
 
       <a
@@ -35,7 +35,7 @@ function Footer(props) {
         rel="noopener noreferrer"
       >
         
-        <span>{t('Crowdsourced Patient Database')}</span>
+        <span>Crowdsourced Patient Database</span>
       </a>
 
       <a
@@ -46,7 +46,7 @@ function Footer(props) {
         style={{justifyContent: 'center'}}
       >
         
-        <span>{t('View updates on Twitter')}</span>
+        <span>View updates on Twitter</span>
       </a>
 
       <a
@@ -56,7 +56,7 @@ function Footer(props) {
         rel="noopener noreferrer"
       >
         
-        <span>{t('Join Telegram to Collaborate!')}</span>
+        <span>Join Telegram to Collaborate!</span>
       </a>
     </footer>
   );
