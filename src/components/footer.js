@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Icon from 'react-feather';
+// import * as Icon from 'react-feather';
 // import {useTranslation} from 'react-i18next';
 
 function Footer(props) {
