@@ -507,7 +507,6 @@ return (
     </div>
     )}
   </div>
-<Footer />
 </React.Fragment>
 );
 }
