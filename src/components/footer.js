@@ -25,7 +25,7 @@ function Footer(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon.GitHub />
+        
         <span>{t('Open Sourced on GitHub')}</span>
       </a>
 
@@ -35,7 +35,7 @@ function Footer(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon.Database />
+        
         <span>{t('Crowdsourced Patient Database')}</span>
       </a>
 
@@ -46,7 +46,7 @@ function Footer(props) {
         className="button twitter"
         style={{justifyContent: 'center'}}
       >
-        <Icon.Twitter />
+        
         <span>{t('View updates on Twitter')}</span>
       </a>
 
@@ -56,7 +56,7 @@ function Footer(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon.MessageCircle />
+        
         <span>{t('Join Telegram to Collaborate!')}</span>
       </a>
     </footer>
