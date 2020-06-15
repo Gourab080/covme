@@ -2055,3 +2055,29 @@ nav {
 .subtitle-color {
     color: #999;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+
+  & > * {
+    align-self: center;
+    text-align: center;
+  }
+
+  h5 {
+    color: $gray;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  img {
+    height: 2rem;
+    width: 2rem;
+  }
+}
