@@ -3,7 +3,6 @@ import React from 'react';
 // import {useTranslation} from 'react-i18next';
 
 function Footer(props) {
-  const {t} = useTranslation();
 
   return (
     <footer className="fadeInUp" style={{animationDelay: '2s'}}>
