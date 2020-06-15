@@ -182,7 +182,7 @@ colorClass: 'orange',
 {
 name: IS_MOBILE_DEVICE ? 'recovered' : 'recovered',
 accessor: 'recovered',
-colorClass: 'green',
+colorClass: 'blue',
 },
 {
                         name: 'deceased',
