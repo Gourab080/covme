@@ -5,7 +5,7 @@ import Navbar from "./components/navbar";
 import Home from "./components/home";
 import Helpline from "./components/helplines";
 import State from "./components/state";
-import "./styles/styles.css";
+import "./styles/styles.scss";
 import ScrollToTop from "./utils/scroll-top";
 import { Helmet } from "react-helmet";
 import Analytics from "react-router-ga";
