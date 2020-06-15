@@ -91,7 +91,7 @@ function Table(props) {
                                     <td
                                         key={j}
                                         className={`${
-                                            j === 0 ? 'bg-gray-200 font-bold' : 'text-right'
+                                            j === 0 ? 'bg-white-200 font-bold' : 'text-right'
                                         }  text-2xs border px-2 py-2 ${extraClass}`}
                                     >
                                         <span>
